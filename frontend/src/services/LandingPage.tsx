@@ -1,10 +1,12 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import NotificationCard from '@/components/pages/NotificationCard'
+import Navigation from './Navigation'
 
 const LandingPage: React.FC = () => {
     return (
         <div className="min-h-screen bg-black text-white w-full">
+            <Navigation/>
             <main className="container mx-auto px-4 pt-32">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div className="space-y-8">

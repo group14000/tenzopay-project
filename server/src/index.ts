@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import userRoutes from './routes/userRoutes';
 import connectDB from './config/db';
 import dotenv from 'dotenv';
+import cors from 'cors'; 
 
 dotenv.config();
 
@@ -11,6 +12,8 @@ const PORT = process.env.PORT;
 
 // Middleware
 app.use(bodyParser.json());
+
+app.use(cors());
 
 // Connect Database
 connectDB();
